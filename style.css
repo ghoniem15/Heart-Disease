@@ -22,7 +22,7 @@ body {
   width: 50%;              /* نص الشاشة */
   max-width: 600px;        /* أقصى حجم */
   border-radius: 20px;
-  animation: fadeIn 3s ease-in-out;  /* الزمن 3 ثواني */
+  animation: fadeIn 6s ease-in-out;  /* الزمن 3 ثواني */
 }
 
 .fade-text {
