@@ -1,0 +1,39 @@
+/* خلفية متدرجة */
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  font-family: 'Arial', sans-serif;
+}
+
+/* العناوين */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* النصوص */
+.reveal p, .reveal ul {
+  color: #dcdcdc;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* لون مميز */
+.highlight {
+  color: #4cc9f0;
+}
+
+/* القوائم */
+.reveal ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reveal ul li {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+/* أيقونات */
+i {
+  color: #4cc9f0;
+}
