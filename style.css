@@ -6,16 +6,26 @@
   <title>Portfolio - Ghoniem Mohamed</title>
 
   <!-- Reveal.js Styles -->
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     .profile-pic {
-      width: 40%;
+      width: 50%;
       max-width: 400px;
       border-radius: 20px;
       animation: fadeIn 3s ease-in-out;
@@ -65,9 +75,15 @@
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    a {
+      color: #4cc9f0;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
+
   <div class="reveal">
     <div class="slides">
 
@@ -134,10 +150,15 @@
     </div>
   </div>
 
-  <!-- Reveal.js Script -->
-  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.js"></script>
   <script>
-    Reveal.initialize();
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: true,
+      hash: true,
+      transition: 'slide'
+    });
   </script>
 </body>
 </html>
