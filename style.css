@@ -1,39 +1,13 @@
-/* خلفية متدرجة */
-body {
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-  font-family: 'Arial', sans-serif;
+.profile-pic {
+  width: 50%;               /* تاخد نص الشاشة */
+  max-width: 600px;         /* أقصى حجم للصورة */
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  opacity: 0;               /* تبدأ مخفية */
+  animation: fadeIn 3s ease forwards; /* تدخل تدريجي في 3 ثواني */
 }
 
-/* العناوين */
-.reveal h1, .reveal h2, .reveal h3 {
-  color: #ffffff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-}
-
-/* النصوص */
-.reveal p, .reveal ul {
-  color: #dcdcdc;
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-/* لون مميز */
-.highlight {
-  color: #4cc9f0;
-}
-
-/* القوائم */
-.reveal ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.reveal ul li {
-  margin: 10px 0;
-  font-size: 22px;
-}
-
-/* أيقونات */
-i {
-  color: #4cc9f0;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
