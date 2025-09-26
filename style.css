@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #4cc9f0);
-  background-size: 200% 200%;
+  background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
   display: flex;
   justify-content: center;
@@ -19,14 +19,14 @@ body {
 }
 
 .profile-pic {
-  width: 50%;              /* نص الشاشة */
-  max-width: 400px;        /* أقصى حجم */
+  width: 50%;
+  max-width: 600px;
   border-radius: 20px;
-  animation: fadeIn 6s ease-in-out;  /* الزمن 3 ثواني */
+  animation: fadeIn 3s ease-in-out;
 }
 
 .fade-text {
-  animation: fadeInUp 6s ease-in-out;  /* الزمن 3 ثواني */
+  animation: fadeInUp 3s ease-in-out;
 }
 
 @keyframes fadeIn {
