@@ -1,13 +1,44 @@
+/* صورة البروفايل */
 .profile-pic {
-  width: 50%;               /* تاخد نص الشاشة */
-  max-width: 600px;         /* أقصى حجم للصورة */
+  width: 50%;               
+  max-width: 600px;         
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(0,0,0,0.7);
-  opacity: 0;               /* تبدأ مخفية */
-  animation: fadeIn 3s ease forwards; /* تدخل تدريجي في 3 ثواني */
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 0s; /* أول حاجة تظهر */
 }
 
+/* النصوص */
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease forwards;
+}
+
+/* الاسم */
+.name {
+  font-size: 60px;
+  color: #4cc9f0;
+  margin-top: 20px;
+  animation-delay: 3.2s; /* يظهر بعد الصورة */
+}
+
+/* العنوان */
+.title {
+  font-size: 32px;
+  color: #ffffff;
+  margin-top: 10px;
+  animation-delay: 4.5s; /* يظهر بعد الاسم */
+}
+
+/* الأنيميشن */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
