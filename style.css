@@ -1,32 +1,143 @@
-#skills {
-  background: #0f3460;
-  color: white;
-  padding: 50px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ghoniem Mohamed</title>
 
-#skills h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-}
+  <!-- Reveal.js Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-.skill {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 12px;
-  font-size: 1.2em;
-  text-align: center;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
+    .profile-pic {
+      width: 40%;
+      max-width: 400px;
+      border-radius: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
 
-.skill:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.2);
-}
+    .name {
+      font-size: 2.5em;
+      color: white;
+      margin-top: 20px;
+      animation: fadeInUp 3s ease-in-out;
+    }
+
+    .title {
+      font-size: 1.8em;
+      color: #4cc9f0;
+      animation: fadeInUp 3s ease-in-out;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <img src="me.jpg" alt="Ghoniem Mohamed" class="profile-pic">
+        <h1 class="name">Ghoniem Mohamed</h1>
+        <h3 class="title">Data Analyst</h3>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Passionate data analyst with 1 year of experience and more than 20 completed projects.
+          Skilled in transforming raw data into useful insights that support business decision-making.
+          Experienced in Excel, SQL, Power BI, Tableau, and Python.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill">Excel</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Python</div>
+          <div class="skill">Power BI</div>
+          <div class="skill">Tableau</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>Superstore Dashboard – تحليل المبيعات والفروع.</li>
+          <li>Financial Dashboard (NTI) – متابعة الإيرادات والمصروفات.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>Faculty of Commerce – South Valley University<br>Expected Graduation: 2026</p>
+      </section>
+
+      <section>
+        <h2>Training</h2>
+        <ul>
+          <li>Data Analysis for Professionals – NTI</li>
+          <li>Data Summer Camp – Alaa Essam Academy</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Activities</h2>
+        <p>PR member at AMY Team (Active Minds Youth)</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Email: mohamedghoniem998@gmail.com</p>
+        <p>Phone: 01016383457</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ghoniem-mohamed-137a37255" target="_blank">ghoniem-mohamed</a></p>
+        <p>GitHub: <a href="https://github.com/ghoniem15" target="_blank">ghoniem15</a></p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js Script -->
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>
